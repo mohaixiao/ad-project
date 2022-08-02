@@ -6,7 +6,7 @@ export default class App extends Component {
     return (
       <div className='box'>
         Hello,React
-        <span>I am jack</span>
+        <span>I am jack I am 22 years old</span>
       </div>
     )
   }
