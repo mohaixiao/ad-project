@@ -17,6 +17,17 @@
         "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
         "no-unused-vars": "warn",  
         "no-use-before-define": "off",
-
+        "import/extensions": ["error", "never", { "svg": "always" }],
     },
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "map": [
+                    ["pages", "./src/pages"],
+                   
+                ],
+                "extensions": [".ts", ".tsx", ".js", ".jsx", ".json", ".d.ts"]
+            }
+        }
+    }
 }

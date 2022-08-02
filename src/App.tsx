@@ -1,14 +1,34 @@
-import React, { Component } from 'react'
-import './style.scss'
-interface Props {}
+import React, { Component } from 'react';
+import { RouteComponentProps } from 'react-router-dom';
+import './style.scss';
 
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <div className='box'>
-        Hello,React
-        <span>I am jack I am 22 years old</span>
-      </div>
-    )
-  }
+interface Props extends RouteComponentProps { 
+  children:any
 }
+
+class App extends Component<Props> {
+    handleRoute = () => {
+        const { location, history } = this.props;
+        const { pathname } = location;
+
+        // 自动去首页
+        if (pathname === '/') {
+            history.push('index');
+            return false;
+        }
+        return true;
+    }
+
+    render() {
+        const { children } = this.props;
+        return (
+            <div>
+                {
+                    this.handleRoute() ? children : 'other'
+                }
+            </div>
+        );
+    }
+}
+
+export default App;
