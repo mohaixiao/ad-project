@@ -19,12 +19,14 @@
         "no-use-before-define": "off",
         "import/extensions": ["error", "never", { "svg": "always" }],
         "import/no-extraneous-dependencies": "off",
+        "no-plusplus": "off",
     },
     "settings": {
         "import/resolver": {
             "alias": {
                 "map": [
                     ["pages", "./src/pages"],
+                    ["@utils", "./src/utils"],
                    
                 ],
                 "extensions": [".ts", ".tsx", ".js", ".jsx", ".json", ".d.ts"]
