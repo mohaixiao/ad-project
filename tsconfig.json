@@ -30,12 +30,25 @@
       "pages/*": [
         "src/pages/*"
       ],
+      "common/*": [
+        "src/common/*"
+      ],
       "@utils/*": [
         "src/utils/*"
       ],
       "@components/*": [
         "src/components/*"
-      ]
+      ],
+      "context/*": [
+        "src/context/*"
+      ],
+      "api/*": [
+        "src/api/*"
+      ],
+      "store/*": [
+        "src/store/*"
+      ],
+
     }, /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */

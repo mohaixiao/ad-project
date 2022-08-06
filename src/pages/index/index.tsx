@@ -3,7 +3,7 @@ import moment from "moment";
 import axios from "axios";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
-import Chart from "./components/Chart";
+import DataTrend from "./components/DataTrend";
 import Account from "./components/Account";
 import PromotionCard from "./components/PromotionCard";
 import ProductCard from "./components/ProductCard";
@@ -37,7 +37,7 @@ export default class IndexPage extends Component<Props> {
         <div className="content-box">
           <div className="left-content">
             <div className="chart-area">
-              <Chart />
+              <DataTrend />
             </div>
             <div className="promotion-area">
               <PromotionCard />
