@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import moment from "moment";
 import axios from "axios";
+import { Select, Button, DatePicker } from "antd";
+
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import DataTrend from "./components/DataTrend";
@@ -55,6 +57,19 @@ export default class IndexPage extends Component<Props> {
             </div>
             <div className="product-news-area">
               <ProductNews />
+            </div>
+            <div className="right-footer-area">
+              <div className="title">品牌推广</div>
+              <div className="btns">
+                <div className="label">热门产品：</div>
+                <Button size="small" style={{ marginRight: 10 }}>
+                  品牌专区
+                </Button>
+                <Button size="small">巨屏广告</Button>
+              </div>
+            </div>
+            <div className="right-bottom-img">
+              <img src="assets/imgs/right-bg.png" alt="" />
             </div>
           </div>
         </div>
