@@ -106,6 +106,7 @@ class ProCardItem extends React.Component<IProps, IStates> {
                         <div className="btn-wrap">
                             <Button
                                 size="small"
+                                type='primary'
                                 onClick={this.handleClick}
                             >
                                 进入

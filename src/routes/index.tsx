@@ -4,6 +4,8 @@ import { renderRoutes } from "react-router-config";
 
 import IndexPage from "pages/index/index";
 import LoginPage from "pages/login/index";
+import SearchPromotionPage from "pages/searchPromotion";
+
 import App from "../App";
 
 const allRoutes = [
@@ -20,6 +22,12 @@ const allRoutes = [
     component: LoginPage,
     title: "",
   },
+  {
+    path: '/searchPromotion',
+    exact:false,
+    component:SearchPromotionPage,
+    title:""
+  }
 ];
 
 const AppWrap = withRouter(App);
