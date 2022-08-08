@@ -71,6 +71,7 @@ export default class SearchPromotionPage extends Component<IProps> {
             <DataTrend cardData={cardData}/>
           </div>
           <div className="wave-analysis">
+          <div className="wave-analysis-title">波动分析</div>
             <WaveAnalysis/>
           </div>
           <div className="user-portrait-box">
