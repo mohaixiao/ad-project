@@ -3,11 +3,12 @@ const webpack = require('webpack');
 const { merge } = require('webpack-merge');
 const OpenBrowserPlugin = require('open-browser-webpack4-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+// const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin');
 // const SpeedMeasurePlugin = require("speed-measure-webpack-plugin");
 const webpackConfigBase = require('./webpack.base.config');
 const mockMiddleware = require('./mock.config');
 
-// const smp = new SpeedMeasurePlugin();`
+// const smp = new SpeedMeasurePlugin();
 const PORT = 8080;
 const webpackConfigDev = {
     mode: 'development',
@@ -22,6 +23,7 @@ const webpackConfigDev = {
         new OpenBrowserPlugin({
             url: `http://localhost:${PORT}/#/`,
         }),
+        // new ForkTsCheckerWebpackPlugin(),
     ],
     devtool: 'eval-source-map',
     devServer: {

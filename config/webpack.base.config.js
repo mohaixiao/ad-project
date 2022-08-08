@@ -32,9 +32,9 @@ const webpackBaseConfig = {
                 test: /\.tsx?$/,
                 use: {
                     loader: 'ts-loader',
-                    // options: {
-                    //     transpileOnly: true,
-                    // },
+                    options: {
+                        transpileOnly: true,
+                    },
                 },
             },
 
@@ -46,6 +46,18 @@ const webpackBaseConfig = {
                     'sass-loader',
                 ],
             },
+            {
+                test: /\.(jpg|png|jpeg|gif)$/,
+                use: [
+                  {
+                    loader: 'file-loader',
+                    options: {
+                      name: '[name]_[hash].[ext]',
+                      outputPath: 'dist/',
+                    },
+                  },
+                ],
+            }
         ],
     },
 };

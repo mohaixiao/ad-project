@@ -1,8 +1,7 @@
 import React from 'react';
 import {
     Button, Modal, Radio, InputNumber,
-} from 'antd';
-import { ThemeContext } from '../../../../context/theme';
+} from 'antd';import { ThemeContext } from 'context/theme';
 import { EditOutlined } from '@ant-design/icons';
 import './style.scss';
 
@@ -106,7 +105,7 @@ class ProCardItem extends React.Component<IProps, IStates> {
                         <div className="btn-wrap">
                             <Button
                                 size="small"
-                                type='primary'
+                                type={this.context.buttonType}
                                 onClick={this.handleClick}
                             >
                                 进入
